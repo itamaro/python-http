@@ -6,7 +6,7 @@ from os import curdir, sep
 PORT_NUMBER = 8080
 
 class myHandler(BaseHTTPRequestHandler):
-	
+
 	#Handler for the GET requests
 	def do_GET(self):
 		self.send_response(200)
@@ -22,4 +22,4 @@ try:
 
 except KeyboardInterrupt:
 	server.server_close()
-    print('Stopping server')
+	print('Stopping server')
